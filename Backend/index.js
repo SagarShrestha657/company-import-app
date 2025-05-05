@@ -11,7 +11,7 @@ app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ limit: "10mb", extended: true }));
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://creative-theards.vercel.app",
+  "https://company-import-app.vercel.app",
 ];
 app.use(
   cors({

@@ -1,14 +1,13 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import { ConnectDB } from "./lib/DB.js";
-import router from "./Routes/CompanyRoute.js";
+import pokemonRouter from "./Routes/PokemonRoute.js";
 
 dotenv.config();
 
 const app = express();
-app.use(express.json({ limit: "10mb" }));
-app.use(express.urlencoded({ limit: "10mb", extended: true }));
+app.use(express.json());
+// app.use(express.urlencoded({ limit: "10mb", extended: true }));
 const allowedOrigins = [
   "http://localhost:5173",
   "https://company-import-app.vercel.app",
@@ -26,12 +25,8 @@ app.use(
   })
 );
 
-// MongoDB Connection
-ConnectDB()
 
-//creating a route for the api
-app.use("/api", router);
-
+app.use("/api", pokemonRouter);
 
 
 const PORT = process.env.PORT || 5001;

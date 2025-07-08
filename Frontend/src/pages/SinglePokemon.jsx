@@ -52,12 +52,12 @@ function SinglePokemon() {
         <div className="min-h-screen bg-gradient-to-br from-blue-200 to-purple-200 p-4 flex flex-col items-center justify-center font-sans dark:from-gray-900 dark:to-gray-800">
             <Link 
                 to="/" 
-                className="self-start mb-4 px-3 py-1.5 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 flex items-center space-x-1 transform group text-xs dark:bg-blue-700 dark:hover:bg-blue-600"
+                className="self-start mb-4 px-3  pr-6 py-1.5 bg-gradient-to-br from-blue-400 to-purple-400 text-white rounded-full shadow-lg hover:from-blue-500 hover:to-purple-500 transition-all duration-300 flex items-center space-x-1 transform group text-xs dark:from-gray-700 dark:to-gray-800 dark:hover:from-gray-800 dark:hover:to-gray-900 "
             >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 transform group-hover:-translate-x-1 transition-transform duration-200" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                <span>Back to all Pokemon</span>
+                <span>Back</span>
             </Link>
             <div className="relative bg-blue-100 rounded-3xl shadow-2xl p-6 max-w-xl w-full flex flex-col items-center transform transition-all duration-500 border border-gray-300 overflow-hidden animation-fade-in dark:bg-gray-800 dark:border-gray-700 dark:shadow-none">
                 {/* Subtle pattern/texture background */}
